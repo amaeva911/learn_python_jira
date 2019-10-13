@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page_title }}</title>
+  </head>
+  <body>
+		<h1 align="center">{{page_title }}</h1>
+      <div>
+        <h3>Активные задачи</h3>
+          {% for news in news_list%}
+            <div class="block1">
+              <h4>{{ news['Radio']|safe }}<b>{{ news['Key'] }}</b>: {{ news['Name'] }}<br/></h4>
+              Создал: {{ news['Creator'] }}, потрачено времени: {{ news['Time'] }} часов.
+            </div>
+          {% endfor %}
+      </div>        
+    <script type="text/javaScript">
+      let JiraID;
+      let ActivationDate = 0;
+      function printResult(id){
+        let Now = new Date();
+        let time = Math.round((Now.getTime() - ActivationDate)/60000);
+        if(ActivationDate != 0){
+          alert(time);
+        }
+        JiraID = id;
+        ActivationDate = Now.getTime();
+      }
+    </script>
+    <style type="text/css">
+      body {
+        width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Calibri;
+      }
+      h1 {
+        font-family: Cambria;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      h3 {
+        font-family: Cambria;
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      h4 {
+        font-family: Cambria;
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .block1 { 
+       width: 400px; 
+       background: #cec;
+       margin: 0;
+       margin-top: 5px;
+       padding: 10px;
+       padding-left: 20px;
+       float: left;
+      }
+     </style>
+  </body>
+</html>
