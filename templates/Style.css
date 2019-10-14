@@ -1,0 +1,45 @@
+        body {
+            width: 380px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Calibri;
+        }
+        h1 {
+            font-family: Cambria;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        h3 {
+            font-family: Cambria;
+            padding: 0;
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        h4 {
+            font-family: Cambria;
+            padding: 0;
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .block1 { 
+        width: 350px; 
+        background: #cec;
+        margin: 0;
+        margin-top: 5px;
+        padding: 10px;
+        padding-left: 20px;
+        float: left;
+        }
+        .block2 { 
+        width: 350px; 
+        background: #cec;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        padding-left: 20px;
+        float: left;
+        }

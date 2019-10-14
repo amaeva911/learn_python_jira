@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/Style.css">
+    <script type="text/javascript" src="static/Scripts.js"></script>
+    <meta charset="utf-8">
+    <title>{{ page_title }}: Авторизация</title>
+  </head>
+  <body>
+		<h1>{{ page_title }}</h1>
+    <div>
+      <h3>Авторизация</h3>
+        <div class="block1">
+            Логин: 
+            <br/>
+            <input type="text" id="login">
+            <br/>
+            Пароль: 
+            <br/>
+            <input type="text" id="password">
+            <br/>
+            <input type="submit" value="Войти" onclick="authent()">
+        </div>
+    </div>    
+    <script type="text/javascript">
+      function authent(){
+      let login = document.getElementById('login').value;
+      let password = document.getElementById('password').value;
+      alert(login + ", " + password)
+      }
+    </script>
+  </body>
+</html>
